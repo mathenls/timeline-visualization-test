@@ -1,0 +1,104 @@
+/* Styles for the Timeline Component */
+
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.timeline-controls {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeline-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.timeline-button:hover {
+  background-color: #ddd;
+}
+
+.zoom-indicator {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.zoom-tip {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  min-height: 300px;
+  border: 1px solid #ddd;
+  display: block;
+}
+
+.timeline-canvas {
+  display: block; 
+  width: 100%;
+}
+
+.timeline-tooltip {
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.hover-tooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 10px 15px;
+  max-width: 300px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.drag-tooltip {
+  transform: translate(-50%, -100%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Tooltip Content Styling */
+.tooltip-line {
+  /* Minimal styles for content lines */
+}
+
+.tooltip-line b {
+  font-weight: bold;
+}
+
+.timeline-edit-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.timeline-edit-input {
+  width: 90%;
+  height: 70%;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+} 
